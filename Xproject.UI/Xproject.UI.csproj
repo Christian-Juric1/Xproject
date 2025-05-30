@@ -6,15 +6,17 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <UseWPF>true</UseWPF>
+	<ImplicitUsings>enable</ImplicitUsings>
+	<Authors>Christian Juric</Authors>
+	<Company>Quantum Software</Company>
+	<Description>Xproject is a modern project management desktop application for teams and individuals.</Description>
+	<Copyright>Copyright © 2025 Quantum</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Components\" />
     <Folder Include="Resources\Icons\" />
     <Folder Include="Resources\Fonts\" />
-    <Folder Include="Utils\Converters\" />
-    <Folder Include="Utils\Commands\" />
-    <Folder Include="ViewModels\" />
-    <Folder Include="Views\" />
   </ItemGroup>
 
   <ItemGroup>
