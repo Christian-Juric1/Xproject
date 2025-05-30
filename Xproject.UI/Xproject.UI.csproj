@@ -8,4 +8,17 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Resources\Icons\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Utils\Converters\" />
+    <Folder Include="Utils\Commands\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="Views\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xproject.Core\Xproject.Core.csproj" />
+  </ItemGroup>
+
 </Project>
