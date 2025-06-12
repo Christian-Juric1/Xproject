@@ -9,8 +9,62 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Core\Components\" />
-    <Folder Include="Core\Views\" />
+    <Folder Include="Behaviors\" />
+    <Folder Include="Controls\Navigation\" />
+    <Folder Include="Controls\Charts\" />
+    <Folder Include="Controls\Common\" />
+    <Folder Include="Controls\Kanban\" />
+    <Folder Include="Controls\Communication\" />
+    <Folder Include="Controls\Calendar\" />
+    <Folder Include="Converters\" />
+    <Folder Include="Helpers\" />
+    <Folder Include="Extensions\" />
+    <Folder Include="Configuration\" />
+    <Folder Include="Properties\" />
+    <Folder Include="Resources\Documents\Help\" />
+    <Folder Include="Resources\Documents\Templates\" />
+    <Folder Include="Resources\Fonts\" />
+    <Folder Include="Resources\Audio\" />
+    <Folder Include="Resources\Images\Icons\" />
+    <Folder Include="Resources\Images\AppIcons\" />
+    <Folder Include="Resources\Images\Backgrounds\" />
+    <Folder Include="Resources\Images\Charts\" />
+    <Folder Include="Resources\Images\Placeholders\" />
+    <Folder Include="Resources\Localization\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Styles\Colors\" />
+    <Folder Include="Styles\Fonts\" />
+    <Folder Include="Styles\Controls\" />
+    <Folder Include="Styles\Animations\" />
+    <Folder Include="Styles\Templates\" />
+    <Folder Include="Styles\Themes\" />
+    <Folder Include="Triggers\" />
+    <Folder Include="ViewModels\Administration\" />
+    <Folder Include="ViewModels\Agile\" />
+    <Folder Include="ViewModels\Base\" />
+    <Folder Include="ViewModels\Calendar\" />
+    <Folder Include="ViewModels\Communication\" />
+    <Folder Include="ViewModels\Documents\" />
+    <Folder Include="ViewModels\Finance\" />
+    <Folder Include="ViewModels\Projects\" />
+    <Folder Include="ViewModels\ProjectTasks\" />
+    <Folder Include="ViewModels\Reports\" />
+    <Folder Include="ViewModels\TimeTracking\" />
+    <Folder Include="ViewModels\Users\" />
+    <Folder Include="ViewModels\Workflow\" />
+    <Folder Include="Views\Agile\" />
+    <Folder Include="Views\Calendar\" />
+    <Folder Include="Views\Documents\" />
+    <Folder Include="Views\Communication\" />
+    <Folder Include="Views\Finance\" />
+    <Folder Include="Views\Administration\" />
+    <Folder Include="Views\Dialogs\" />
+    <Folder Include="Views\Workflow\" />
+    <Folder Include="Views\Reports\" />
+    <Folder Include="Views\TimeTracking\" />
+    <Folder Include="Views\Users\" />
+    <Folder Include="Views\ProjectTasks\" />
+    <Folder Include="Views\Projects\" />
   </ItemGroup>
 
 </Project>

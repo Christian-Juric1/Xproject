@@ -4,32 +4,19 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Xproject.UI"
-        xmlns:viewmodel="clr-namespace:Xproject.UI.Core.ViewModels"
         mc:Ignorable="d"
         Title="Xproject"
         Height="450" Width="800">
-    <Window.DataContext>
+
+    <!--<Window.DataContext>
         <viewmodel:MainViewModel/>
-    </Window.DataContext>
+    </Window.DataContext>-->
 
     <Window.Resources>
         
     </Window.Resources>
-
+    
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
 
-        <Border Grid.Column="0">
-            <StackPanel Orientation="Vertical">
-                <Button Content="Dashboard" />
-                <Button Content="Projects" />
-                <Button Content="Tasks" />
-            </StackPanel>
-        </Border>
-
-        <ContentControl Content="{Binding CurrentView}" Grid.Column="1"/>
     </Grid>
 </Window>
