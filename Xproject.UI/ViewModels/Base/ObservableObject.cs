@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
-namespace Xproject.UI.ViewModels;
+namespace Xproject.UI.ViewModels.Base;
 
 public class ObservableObject : INotifyPropertyChanged
 {

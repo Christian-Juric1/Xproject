@@ -1,5 +1,5 @@
 ﻿namespace Xproject.UI.ViewModels;
 
-public class MainViewModel : ObservableObject
+public class MainViewModel
 {
 }

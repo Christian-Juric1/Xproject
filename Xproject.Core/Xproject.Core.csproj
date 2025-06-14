@@ -10,7 +10,9 @@
   <ItemGroup>
     <Folder Include="DTOs\" />
     <Folder Include="Models\" />
-    <Folder Include="Services\" />
+    <Folder Include="Services\Interfaces\" />
+    <Folder Include="Services\Implementations\" />
+    <Folder Include="Services\Base\" />
   </ItemGroup>
 
 </Project>

@@ -2,9 +2,9 @@
 
 namespace Xproject.UI.Views;
 
-public partial class DashboardView : UserControl
+public partial class TaskListView : UserControl
 {
-    public DashboardView()
+    public TaskListView()
     {
         InitializeComponent();
     }

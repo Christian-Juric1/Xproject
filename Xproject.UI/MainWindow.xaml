@@ -15,13 +15,11 @@
     </Window.DataContext>
 
     <Window.Resources>
-        
-        
         <!--<DataTemplate DataTemplate="{x:Type viewmodel:DashboardViewModel}">
             <view:DashboardView/>
         </DataTemplate>-->
     </Window.Resources>
-    
+
     <Grid>
 
     </Grid>
