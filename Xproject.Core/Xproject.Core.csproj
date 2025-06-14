@@ -8,57 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="DTOs\Agile\" />
-    <Folder Include="DTOs\Teams\" />
-    <Folder Include="DTOs\Users\" />
-    <Folder Include="DTOs\ProjectTasks\" />
-    <Folder Include="DTOs\Projects\" />
-    <Folder Include="Models\Agile\" />
-    <Folder Include="Models\Calendar\" />
-    <Folder Include="Models\Communication\" />
-    <Folder Include="Models\Documents\" />
-    <Folder Include="Models\Finance\" />
-    <Folder Include="Models\Integration\" />
-    <Folder Include="Models\Enums\" />
-    <Folder Include="Models\Security\" />
-    <Folder Include="Models\Teams\" />
-    <Folder Include="Models\Projects\" />
-    <Folder Include="Models\ProjectTasks\" />
-    <Folder Include="Models\Reports\" />
-    <Folder Include="Models\TimeTracking\" />
-    <Folder Include="Models\Users\" />
-    <Folder Include="Models\Workflow\" />
-    <Folder Include="Services\Base\" />
-    <Folder Include="Services\Implementations\Agile\" />
-    <Folder Include="Services\Implementations\Calendar\" />
-    <Folder Include="Services\Implementations\Common\" />
-    <Folder Include="Services\Implementations\Communication\" />
-    <Folder Include="Services\Implementations\Documents\" />
-    <Folder Include="Services\Implementations\Finance\" />
-    <Folder Include="Services\Implementations\Integration\" />
-    <Folder Include="Services\Implementations\Projects\" />
-    <Folder Include="Services\Implementations\ProjectTasks\" />
-    <Folder Include="Services\Implementations\Reports\" />
-    <Folder Include="Services\Implementations\Security\" />
-    <Folder Include="Services\Implementations\Teams\" />
-    <Folder Include="Services\Implementations\TimeTracking\" />
-    <Folder Include="Services\Implementations\Users\" />
-    <Folder Include="Services\Implementations\Workflow\" />
-    <Folder Include="Services\Interfaces\Agile\" />
-    <Folder Include="Services\Interfaces\Calendar\" />
-    <Folder Include="Services\Interfaces\Communication\" />
-    <Folder Include="Services\Interfaces\Documents\" />
-    <Folder Include="Services\Interfaces\Finance\" />
-    <Folder Include="Services\Interfaces\Integration\" />
-    <Folder Include="Services\Interfaces\Common\" />
-    <Folder Include="Services\Interfaces\Projects\" />
-    <Folder Include="Services\Interfaces\ProjectTasks\" />
-    <Folder Include="Services\Interfaces\Reports\" />
-    <Folder Include="Services\Interfaces\Security\" />
-    <Folder Include="Services\Interfaces\Teams\" />
-    <Folder Include="Services\Interfaces\TimeTracking\" />
-    <Folder Include="Services\Interfaces\Users\" />
-    <Folder Include="Services\Interfaces\Workflow\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="Models\" />
+    <Folder Include="Services\" />
   </ItemGroup>
 
 </Project>
