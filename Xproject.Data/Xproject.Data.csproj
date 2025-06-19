@@ -8,8 +8,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Context\" />
+    <Folder Include="DbContexts\" />
     <Folder Include="Migrations\" />
+    <Folder Include="UnitOfWork\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
 

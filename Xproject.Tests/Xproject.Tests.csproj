@@ -20,4 +20,12 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="IntegrationTests\DataAccess\" />
+    <Folder Include="IntegrationTests\Workflows\" />
+    <Folder Include="UnitTests\Helpers\" />
+    <Folder Include="UnitTests\Services\" />
+    <Folder Include="UnitTests\ViewModels\" />
+  </ItemGroup>
+
 </Project>

@@ -9,24 +9,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Resources\Styles\Colors\" />
-    <Folder Include="Resources\Styles\Fonts\" />
-    <Folder Include="Resources\Styles\Controls\" />
-    <Folder Include="Resources\Styles\Animations\" />
-    <Folder Include="Resources\Styles\Templates\" />
-    <Folder Include="Resources\Styles\Themes\" />
     <Folder Include="Services\Interfaces\" />
-    <Folder Include="Utils\Behaviors\" />
     <Folder Include="Utils\Controls\Navigation\" />
     <Folder Include="Utils\Controls\Charts\" />
     <Folder Include="Utils\Controls\Common\" />
     <Folder Include="Utils\Controls\Kanban\" />
     <Folder Include="Utils\Controls\Calendar\" />
     <Folder Include="Utils\Controls\Communication\" />
-    <Folder Include="Utils\Converters\" />
-    <Folder Include="Helpers\" />
-    <Folder Include="Utils\Extensions\" />
-    <Folder Include="Configuration\" />
     <Folder Include="Properties\" />
     <Folder Include="Resources\Documents\Help\" />
     <Folder Include="Resources\Documents\Templates\" />
@@ -38,20 +27,6 @@
     <Folder Include="Resources\Images\Charts\" />
     <Folder Include="Resources\Images\Placeholders\" />
     <Folder Include="Resources\Localization\" />
-    <Folder Include="Utils\Triggers\" />
-    <Folder Include="Views\Agile\" />
-    <Folder Include="Views\Calendar\" />
-    <Folder Include="Views\Documents\" />
-    <Folder Include="Views\Communication\" />
-    <Folder Include="Views\Finance\" />
-    <Folder Include="Views\Administration\" />
-    <Folder Include="Views\Dialogs\" />
-    <Folder Include="Views\Workflow\" />
-    <Folder Include="Views\Reports\" />
-    <Folder Include="Views\TimeTracking\" />
-    <Folder Include="Views\Users\" />
-    <Folder Include="Views\Tasks\" />
-    <Folder Include="Views\Projects\" />
   </ItemGroup>
 
 </Project>
