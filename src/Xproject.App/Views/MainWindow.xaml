@@ -4,12 +4,61 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Xproject.App.Views"
+        xmlns:vm="clr-namespace:Xproject.App.ViewModels"
         mc:Ignorable="d"
         Title="Xproject"
 		Height="450" Width="800">
-	<Window.Resources></Window.Resources>
+	<Window.DataContext>
+		<vm:MainWindowViewModel />
+	</Window.DataContext>
+	
+	<Window.Resources>
+		<!--<DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+			<local:DashboardView />
+		</DataTemplate>
+		
+		<DataTemplate DataType="{x:Type vm:ProjectListViewModel}">
+			<local:ProjectListView />
+		</DataTemplate>
+		
+		<DataTemplate DataType="{x:Type vm:TaskListViewModel}">
+			<local:TaskListView />
+		</DataTemplate>-->
+	</Window.Resources>
 	
     <Grid>
-		<TextBlock Text="Hello, World!" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" />
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="200" />
+			<ColumnDefinition Width="*" />
+		</Grid.ColumnDefinitions>
+
+		<Border Grid.Column="0">
+			<StackPanel Orientation="Vertical">
+				<Button Name="ButtonNavigateDashboardView" Command="{Binding NavigateDashboardViewCommand}">
+					<StackPanel Orientation="Horizontal">
+						<Path Name="ImageDashboard" />
+						<TextBlock Text="Dashboard" />
+					</StackPanel>
+				</Button>
+
+				<Button Name="ButtonNavigateProjectListView" Command="{Binding NavigateProjectListViewCommand}">
+					<StackPanel Orientation="Horizontal">
+						<Path Name="ImageProjectList" />
+						<TextBlock Text="Projects" />
+					</StackPanel>
+				</Button>
+
+				<Button Name="ButtonNavigateTaskListView" Command="{Binding NavigateTaskListViewCommand}">
+					<StackPanel Orientation="Horizontal">
+						<Path Name="ImageTaskList" />
+						<TextBlock Text="Tasks" />
+					</StackPanel>
+				</Button>
+			</StackPanel>
+		</Border>
+
+		<Border Grid.Column="1">
+			<ContentControl Name="CurrentView" Content="{Binding CurrentView}" />
+		</Border>
 	</Grid>
 </Window>
