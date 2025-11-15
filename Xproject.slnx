@@ -2,4 +2,5 @@
   <Project Path="src/Xproject.App/Xproject.App.csproj" />
   <Project Path="src/Xproject.Core/Xproject.Core.csproj" Id="8071c7a2-0dfd-4774-8a99-dbf35b492b4f" />
   <Project Path="src/Xproject.Infrastructure/Xproject.Infrastructure.csproj" Id="6882b5cd-0e5a-4b40-aef7-1803f8b8d151" />
+  <Project Path="tests/Xproject.Tests/Xproject.Tests.csproj" Id="27a6c9b9-898d-40f8-877c-7d626fad6d2e" />
 </Solution>
