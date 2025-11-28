@@ -1,21 +1,44 @@
 ﻿using Xproject.App.ComponentModel;
-
-#pragma warning disable CS8618
+using Xproject.App.Input;
+using Xproject.App.Input.Interfaces;
 
 namespace Xproject.App.ViewModels;
 
 public class MainWindowViewModel : ObservableObject
 {
-    private string _title;
+	private object _currentView;
 
-    public string Title
-    {
-        get => _title;
-        set => SetProperty(ref _title, value);
+	public object CurrentView
+	{
+		get { return _currentView; }
+		set { SetProperty(ref _currentView, value); }
 	}
+
+	public IRelayCommand NavigateDashboardViewCommand { get; }
+	public IRelayCommand NavigateProjectListViewCommand { get; }
+	public IRelayCommand NavigateTaskListViewCommand { get; }
 
 	public MainWindowViewModel()
     {
-        Title = "Xproject Application";
-    }
+		NavigateDashboardViewCommand = new RelayCommand(NavigateDashboardView);
+		NavigateProjectListViewCommand = new RelayCommand(NavigateProjectListView);
+		NavigateTaskListViewCommand = new RelayCommand(NavigateTaskListView);
+
+		CurrentView = new DashboardViewModel();
+	}
+
+	private void NavigateDashboardView()
+	{
+		CurrentView = new DashboardViewModel();
+	}
+
+	private void NavigateProjectListView()
+	{
+		CurrentView = new ProjectListViewModel();
+	}
+
+	private void NavigateTaskListView()
+	{
+		CurrentView = new TaskListViewModel();
+	}
 }

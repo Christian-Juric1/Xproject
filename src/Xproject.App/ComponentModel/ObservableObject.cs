@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 
@@ -28,6 +29,50 @@ public abstract class ObservableObject : INotifyPropertyChanged, INotifyProperty
 
         OnPropertyChanging(propertyName);
         field = newValue;
+        OnPropertyChanged(propertyName);
+
+		return true;
+    }
+
+    protected bool SetProperty<T>(T oldValue, T newValue, Action<T> callback, [CallerMemberName] string? propertyName = null)
+    {
+        if (callback == null)
+        {
+            throw new ArgumentNullException(nameof(callback));
+        }
+
+        if (EqualityComparer<T>.Default.Equals(oldValue, newValue))
+        {
+            return false;
+		}
+
+        OnPropertyChanging(propertyName);
+        callback(newValue);
+        OnPropertyChanged(propertyName);
+
+		return true;
+    }
+
+    protected bool SetProperty<TModel, T>(T oldValue, T newValue, TModel model, Action<TModel, T> callback, [CallerMemberName] string? propertyName = null)
+        where TModel : class
+    {
+        if (model == null)
+        {
+            throw new ArgumentNullException(nameof(model));
+        }
+        
+        if (callback == null)
+        {
+            throw new ArgumentNullException(nameof(callback));
+		}
+
+        if (EqualityComparer<T>.Default.Equals(oldValue, newValue))
+        {
+            return false;
+        }
+
+        OnPropertyChanging(propertyName);
+        callback(model, newValue);
         OnPropertyChanged(propertyName);
 
 		return true;

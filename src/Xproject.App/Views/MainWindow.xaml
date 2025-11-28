@@ -1,13 +1,71 @@
 ﻿<Window x:Class="Xproject.App.Views.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Xproject.App.Views"
-        mc:Ignorable="d"
+        xmlns:vm="clr-namespace:Xproject.App.ViewModels"
         Title="Xproject"
-		Height="450" Width="800">
-    <Grid>
-		<TextBlock Text="{Binding Title}" FontSize="24" HorizontalAlignment="Center" VerticalAlignment="Center" />
-	</Grid>
+		Height="600" Width="1024"
+		WindowStyle="None"
+		AllowsTransparency="True"
+		Background="Transparent">
+	<Window.DataContext>
+		<vm:MainWindowViewModel />
+	</Window.DataContext>
+	
+	<Window.Resources>
+		<DataTemplate DataType="{x:Type vm:DashboardViewModel}">
+			<local:DashboardView />
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type vm:ProjectListViewModel}">
+			<local:ProjectListView />
+		</DataTemplate>
+
+		<DataTemplate DataType="{x:Type vm:TaskListViewModel}">
+			<local:TaskListView />
+		</DataTemplate>
+	</Window.Resources>
+
+	<Border Background="White" CornerRadius="30">
+		<Grid RowDefinitions="50, *">
+			<!-- Titlebar -->
+			<Border Grid.Row="0">
+				<Grid ColumnDefinitions="Auto, *, Auto, Auto"></Grid>
+			</Border>
+
+			<!-- Main Content -->
+			<Grid ColumnDefinitions="200, *" Grid.Row="1">
+				<!-- Sidebar -->
+				<Border Grid.Column="0" Padding="5">
+					<StackPanel Orientation="Vertical">
+						<Button Name="ButtonNavigateDashboardView" Command="{Binding NavigateDashboardViewCommand}">
+							<StackPanel Orientation="Horizontal">
+								<Path Name="ImageDashboard" />
+								<TextBlock Text="Dashboard" />
+							</StackPanel>
+						</Button>
+
+						<Button Name="ButtonNavigateProjectListView" Command="{Binding NavigateProjectListViewCommand}">
+							<StackPanel Orientation="Horizontal">
+								<Path Name="ImageProjectList" />
+								<TextBlock Text="Projects" />
+							</StackPanel>
+						</Button>
+
+						<Button Name="ButtonNavigateTaskListView" Command="{Binding NavigateTaskListViewCommand}">
+							<StackPanel Orientation="Horizontal">
+								<Path Name="ImageTaskList" />
+								<TextBlock Text="Tasks" />
+							</StackPanel>
+						</Button>
+					</StackPanel>
+				</Border>
+
+				<!-- Content Area -->
+				<Border Grid.Column="1">
+					<ContentControl Name="CurrentView" Content="{Binding CurrentView}" />
+				</Border>
+			</Grid>
+		</Grid>
+	</Border>
 </Window>
