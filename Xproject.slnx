@@ -1,3 +1,4 @@
 <Solution>
   <Project Path="src/Xproject.App/Xproject.App.csproj" Id="c7ba1b96-b16f-4935-9bf5-e11efd433851" />
+  <Project Path="src/Xproject.Core/Xproject.Core.csproj" Id="3e33b658-985f-4449-98f7-7937caa7992a" />
 </Solution>
